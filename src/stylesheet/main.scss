@@ -1,5 +1,8 @@
-//imports
+//imports - external
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+//imports - component stylesheets
+@import "../app/components/portfolio/portfolio.scss";
 
 // color variables
 $color--base: #F7F7FF;
@@ -46,11 +49,16 @@ body {
 .navbar--list__item {
     margin: 0 3em;
     font-size: 1.5em;
-    
+}
+
+.navbar--list__link {
+    color: $color--accent__dark;
+    text-decoration: none;
+
     &:hover {
-        color: $color--accent__dark;
+        color: $color--main;
         font-weight: 500;
- }
+    }
 }
 
 .section {
@@ -65,33 +73,43 @@ body {
 
 .intro {
     background-color: $color--accent__light;
-    // padding: 1.5em;
+    border-radius: 25px;
     margin: 3em 1em;
     display: flex;
     flex-direction: row;
 }
 
-.intro {
-    // height: 600px;
-}
-
-.intro--section {
-    width:50%
-}
 
 .intro--right {
     padding: 1.2em;
 }
 .intro--section__img {
     width: 100%;
-    // object-fit: cover;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    filter: brightness(120%);
 }
 
 .intro--section__text{
     font-weight: 200;
 }
 
+.intro--section__text:first-of-type {
+    padding-bottom: 1.2em;
+}
+
 .intro--section__header {
     color: $color--accent__dark;
     margin: 1.2em 0;
+}
+
+.footer--text {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    margin: 1em auto;
+    padding: 1em;
+    text-align: center;
+    letter-spacing: .2rem;
 }

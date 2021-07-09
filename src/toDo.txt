@@ -1,0 +1,8 @@
+1. Rewrite Portfolio:
+ -- fix broken js 
+ -- add classes
+2. Rewrite Education as a componet
+3. Build a form in Contact component 
+3.Styling:
+ -- add mixins
+ -- add mediaQuery rules for mobile view
