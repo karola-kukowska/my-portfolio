@@ -6,3 +6,4 @@
 3.Styling:
  -- add mixins
  -- add mediaQuery rules for mobile view
+4. add config for production (minifiers & random filenames)

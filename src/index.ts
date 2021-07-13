@@ -1,5 +1,7 @@
 import "./stylesheet/main.scss";
 
+import "./app/components/portfolio/portfolio.scss";
+
 import header from "./app/components/header/header.html";
 import intro from "./app/components/intro/intro.html";
 import skills from "./app/components/skills/skills.html"; 
@@ -9,7 +11,7 @@ import contact from "./app/components/contact/contact.html";
 import footer from "./app/components/footer/footer.html";
 
 
-console.log("hi");
+
 
 const pageElements = [header,intro,skills,portfolio,education,contact,footer]
 
