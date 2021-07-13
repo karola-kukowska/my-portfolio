@@ -4,7 +4,8 @@
 //imports - component stylesheets
 @import "../app/components/portfolio/portfolio.scss";
 
-// color variables
+//variables
+
 $color--base: #F7F7FF;
 $color--main: #577399;
 $color--accent__light: #BDD5EA;
@@ -84,12 +85,14 @@ body {
     padding: 1.2em;
 }
 .intro--section__img {
-    width: 100%;
+    width: 400px;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     filter: brightness(120%);
+    // background: url("./../assets/profile-pic.jpg");
+    background-color: fuchsia ;
 }
 
 .intro--section__text{

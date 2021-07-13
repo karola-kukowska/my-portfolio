@@ -1,17 +1,41 @@
-// import {card} from "./card";
-// import {subheading} from "./subheading";
+import {card} from "./card";
 
-// export default function education () {
-//     render () {
-//         `
-//         <edu-sub heading="Experience"></edu-sub>
-//         <edu-card
-//           heading="Company Name #1"
-//           subheading="Front-end Engineer"
-//           dates="Jan 2013 - Dec 2014"
-//         ></edu-card>
-//         `
-//     };
-// };
+const data = [
+  {section : "Experience",
+  info: [
+      ["Company Name #1", "Front-end Engineer", "Jan 2020 - Dec 2020"],
+      ["Company Name #2", "Front-end Engineer", "Jan 2021 - May 2021"]
+  ]},
+  {section : "Education",
+  info: [
+      ["Course Name #1", "Webacademy", "2019"],
+      ["Course Name #2", "Webacademy", "2018"],
+      ["Course Name #3", "Webacademy", "2017"],
+  ]},
+];
 
-// customElements.define("education", education());
+export default function EducationModule () {
+  const experienceData = data[0].info;
+  const educationData = data[0].info;
+  let educationHTML = "";
+  educationHTML += `<h2 class="section--header">Experience</h2>`;
+  experienceData.forEach(elem => 
+    educationHTML += `<div>
+    <h3 class="section--text">${elem[0]}</h3>
+    <p class="section--text">${elem[1]}</p>
+    <p class="section--text">${elem[2]}</p>
+  </div>
+  `);
+  educationHTML += `<h2 class="section--header">Education</h2>`;
+  educationData.forEach(elem => 
+    educationHTML += `<div>
+    <h3 class="section--text">${elem[0]}</h3>
+    <p class="section--text">${elem[1]}</p>
+    <p class="section--text">${elem[2]}</p>
+  </div>
+  `);
+
+  
+ return educationHTML;
+}
+  
