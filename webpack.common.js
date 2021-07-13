@@ -5,6 +5,9 @@ module.exports = {
   entry: {
     main: "./src/index.js",
   },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
 
   plugins: [
     new HtmlWebpackPlugin({
@@ -14,6 +17,11 @@ module.exports = {
 
   module: {
     rules: [
+      { 
+        test: /\.tsx?$/, 
+        loader: "ts-loader",
+        exclude: /node_modules/,
+       },
       {
         test: /\.html$/,
         use: [
