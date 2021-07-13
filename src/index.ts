@@ -8,8 +8,8 @@ import education from "./app/components/education/education.html";
 import contact from "./app/components/contact/contact.html";
 import footer from "./app/components/footer/footer.html";
 
-import {contactModule} from "./app/components/contact/contact"
 
+console.log("hi");
 
 const pageElements = [header,intro,skills,portfolio,education,contact,footer]
 
