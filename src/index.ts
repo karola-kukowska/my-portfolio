@@ -12,7 +12,6 @@ import footer from "./app/components/footer/footer.html";
 
 
 
-
 const pageElements = [header,intro,skills,portfolio,education,contact,footer]
 
 function createComponent(name) {
