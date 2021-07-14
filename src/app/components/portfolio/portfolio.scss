@@ -1,10 +1,12 @@
+@import "../../../stylesheet/variables.scss";
+
 * {
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
 }
 
 .slideshow--container {
-  width: 90%;
+  width: 100%;
   position: relative;
   margin: auto;
 }
@@ -16,7 +18,7 @@
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: $color--base;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -30,7 +32,7 @@
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba($color--black,0.1);
 }
 
 .bar {
@@ -38,13 +40,13 @@
   height: 4px;
   width: 40px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: $color--accent__light;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .bar:hover {
-  background-color: #717171;
+  background-color: $color--accent__dark;
 }
 
 .fade {
@@ -59,14 +61,18 @@
 
 
 .slide {
-    background-color: gainsboro;
+    background-color: $color--accent__light;
     display: flex;
     flex-direction: row;
-    height: 420px;
+    height: 620px;
+    border-radius: $border--rounded;
 }
 
 .slide--section__left {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slide--section__right {
@@ -79,8 +85,14 @@
 }
 
 .slide--img {
-    height: 100%;
+  margin-left: 20px;
+    height: 60%;
+    margin: 10px auto;
     object-fit: cover;
+    border: 2px solid $color--main;
+    width: 80%;
+    border-radius: $border--rounded;	
+    box-shadow: -20px 20px $color--accent__dark;
 }
 
 .slide--section__buttons {
@@ -98,25 +110,25 @@ margin-top: 0.6em;
 }
 
 .button--dark {
-  background-color: #555555;
-  color: white;
-  border: 2px solid #555555;
+  background-color: $color--main;
+  color: $color--white;
+  border: 2px solid $color--main;
 }
 
 .button--dark:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
+  background-color: $color--base;
+  color: $color--black;
+  border: 2px solid $color--main;
 }
 
 .button--light {
   background-color: #F9F9f9; 
-  color: black;
-  border: 2px solid #555555;
+  color: $color--black;
+  border: 2px solid $color--main;
 }
 
 .button--light:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
+  background-color: $color--white;
+  color: $color--black;
+  border: 2px solid $color--main;
 }

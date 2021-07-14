@@ -5,22 +5,12 @@
 @import "../app/components/portfolio/portfolio.scss";
 
 //variables
-
-$color--base: #F7F7FF;
-$color--main: #577399;
-$color--accent__light: #BDD5EA;
-$color--accent__dark: #495867;
-$color--contrast: #FE5F55;
-$color--black: #040A10;
-$color--white: #FFFFFF;
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "./variables.scss";
 
 body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: $color--white;
     color: $color--black;
     font-family: 'Merriweather', serif;
@@ -37,6 +27,11 @@ body {
     padding: 0.5em;
     border: $color--black 1px solid;
     margin: 2em auto;
+}
+
+.navbar {
+    // margin: 0 1em;
+    // padding: 1.5em;
 }
 
 .navbar--list {
@@ -74,7 +69,7 @@ body {
 
 .intro {
     background-color: $color--accent__light;
-    border-radius: 25px;
+    border-radius: $border--rounded;
     margin: 3em 1em;
     display: flex;
     flex-direction: row;
@@ -88,8 +83,8 @@ body {
     width: 400px;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: $border--rounded;
+    border-bottom-left-radius: $border--rounded;
     filter: brightness(120%);
     // background: url("./../assets/profile-pic.jpg");
     background-color: fuchsia ;
