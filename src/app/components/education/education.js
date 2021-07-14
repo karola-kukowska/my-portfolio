@@ -18,17 +18,17 @@ export default function EducationModule () {
   const experienceData = data[0].info;
   const educationData = data[0].info;
   let educationHTML = "";
-  educationHTML += `<h2 class="section section--header">Experience</h2>`;
+  educationHTML += `<h2 class="education--header">Experience</h2>`;
   experienceData.forEach(elem => 
-    educationHTML += `<div class="section">
+    educationHTML += `<div class="education--card">
     <h3 class="section--text">${elem[0]}</h3>
     <p class="section--text">${elem[1]}</p>
     <p class="section--text">${elem[2]}</p>
   </div>
   `);
-  educationHTML += `<h2 class="section section--header">Education</h2>`;
+  educationHTML += `<h2 class="education--header">Education</h2>`;
   educationData.forEach(elem => 
-    educationHTML += `<div class="section">
+    educationHTML += `<div class="education--card">
     <h3 class="section--text ">${elem[0]}</h3>
     <p class="section--text">${elem[1]}</p>
     <p class="section--text">${elem[2]}</p>
