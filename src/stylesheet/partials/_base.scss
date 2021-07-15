@@ -1,0 +1,22 @@
+@import "../modules/all";
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $color--white;
+}
+
+.section {
+    margin: 3em 1em;
+    padding: 1.5em;
+}
+
+.section--header {
+    @include header-typography;
+    margin: 1.2rem 0;
+}
+
+.section--bgdark {
+    background-color: $color--accent__light;
+}

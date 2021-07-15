@@ -19,9 +19,9 @@ module.exports = {
       {
         test: /\.(jpe?g|gif|svg)$/i,
         loader: "file-loader",
-        options: {
-          name: "/img/slider/[name].[ext]",
-        },
+        // options: {
+        //   name: "/img/slider/[name].[ext]",
+        // },
       },
       {
         test: /\.html$/i,

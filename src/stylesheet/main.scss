@@ -1,129 +1,19 @@
-//imports - external
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+//modules and variables
+@import "./modules/all";
 
-//imports - component stylesheets
-@import "../app/components/portfolio/portfolio.scss";
-
-//variables
-@import "./variables.scss";
-
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: $color--white;
-    color: $color--black;
-    font-family: 'Merriweather', serif;
-    line-height: 1.5rem;
-}
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.header--name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    padding: 0.5em;
-    border: $color--black 1px solid;
-    margin: 2em auto;
-}
-
-.navbar {
-    // margin: 0 1em;
-    // padding: 1.5em;
-}
-
-.navbar--list {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-}
-
-.navbar--list__item {
-    margin: 0 3em;
-    font-size: 1.5em;
-}
-
-.navbar--list__link {
-    color: $color--accent__dark;
-    text-decoration: none;
-    padding-bottom: 00.2em;
-
-    &:hover {
-        color: $color--main;
-        font-weight: 500;
-        border-bottom: 2px solid $color--accent__light;
-    }
-}
-
-.section {
-    margin: 3em 1em;
-    padding: 1.5em;
-}
-
-.section--header {
-    color: $color--accent__dark;
-    margin: 1.2em 0;
-}
-
-.intro {
-    margin: 3em 1em;
-    padding: 3em 0;
-    display: flex;
-    flex-direction: row;
-}
+//partials
+@import "./partials/base";
+@import "./partials/header";
+@import "./partials/intro";
+@import "./partials/education";
+@import "./partials/footer";
+@import "./partials/portfolio";
 
 
-.intro--right {
-    margin-left: 2.4em;
-    padding: 1.2em;
-}
-.intro--section__img {
-    margin-left: 2.4em;
-    width: 300px;
-    height: 300px;
-    object-fit: scale-down;
-    border-radius: $border--rounded;
-    filter: brightness(140%);
-    background: url("https://billenniumspzoo-my.sharepoint.com/:i:/r/personal/karolina_kasprzak_billennium_com/Documents/profile-pic2.jpg?csf=1&web=1&e=4eUMZ0");
-    box-shadow: -20px 20px $color--accent__dark;
-}
 
-.intro--section__text{
-    font-weight: 200;
-}
 
-.intro--section__text:first-of-type {
-    padding-bottom: 1.2em;
-}
 
-.intro--section__header {
-    color: $color--accent__dark;
-    margin: 1.2em 0;
-}
 
-.footer--text {
-    text-transform: uppercase;
-    font-size: 0.6em;
-    margin: 1em auto;
-    padding: 1em;
-    text-align: center;
-    letter-spacing: .2rem;
-}
 
-.section--bgdark {
-    background-color: $color--accent__light;
-}
-.education--header {
-    padding-left: 1.2em;
-    color: $color--accent__dark;
-    margin: 2.4em 0;
-}
-.education--card {
-    margin: 1.2em 1.2em;
-    padding-left: 1.6em;
-    
-}
+
+

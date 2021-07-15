@@ -1,5 +1,7 @@
+//stylesheet
 import "./stylesheet/main.scss";
 
+//page modules
 import header from "./app/components/header/header.html";
 import intro from "./app/components/intro/intro.html";
 import skills from "./app/components/skills/skills.html";
