@@ -1,5 +1,3 @@
-import {card} from "./card";
-
 const data = [
   {section : "Experience",
   info: [
@@ -35,7 +33,6 @@ export default function EducationModule () {
   </div>
   `);
 
-  
  return educationHTML;
 }
   
