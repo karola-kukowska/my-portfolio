@@ -1,15 +1,12 @@
-1. Rewrite Portfolio:
- -- fix broken js 
- -- add classes
-2. Build a form in Contact component 
-3.Styling:
- -- add mixins
- -- add mediaQuery rules for mobile view
-4. add config for production (minifiers & random filenames)
-
-
 ///feedback:
-poczytać o dzieleniu sass na pliki
-dodać typowanie do ts
-skończyć portfolio
-skonfigurować prettier
++ skonfigurować prettier
++ podzielić stylesheet na pliki
+- skończyć slider
+- dodać typowanie do ts
+
+///future project ideas:
+- build a form in Contact component 
+- add mediaQuery rules for mobile view
+- add config for production (minifiers & random filenames)
+
+
