@@ -1,12 +1,12 @@
 // export class EduCard extends HTMLElement {
 //     constructor() {
 //       super();
-  
+
 //       this.heading = "";
 //       this.subheading = "";
 //       this.dates = "";
 //     }
-  
+
 //     connectedCallback() {
 //       this.heading = this.getAttribute("heading");
 //       this.subheading = this.getAttribute("subheading");
@@ -14,9 +14,9 @@
 
 //       this.render();
 //     }
-  
+
 //     render() {
-//       this.innerHTML = 
+//       this.innerHTML =
 //       `
 //         <div>
 //           <h3>${this.heading}</h3>
