@@ -1,12 +1,13 @@
-export function animateSlides() {
-    let slidePosition = 0
-    const slides = Array.prototype.slice.call(
+export function animateSlides(): void {
+    let slidePosition : number = 0
+    const slides : HTMLHtmlElement[] = Array.prototype.slice.call(
         document.getElementsByClassName("slide")
     )
-    const bars = Array.prototype.slice.call(
+
+    const bars : HTMLHtmlElement[] = Array.prototype.slice.call(
         document.getElementsByClassName("bar")
     )
-    const totalSlides = slides.length
+    const totalSlides : number = slides.length
 
     document.getElementById("prev").addEventListener("click", function () {
         updateSlidePosition("prev")
@@ -18,22 +19,22 @@ export function animateSlides() {
 
     bars.forEach((item) =>
         item.addEventListener("click", () => {
-            setSlide(item.getAttribute("data-num"))
+            setSlide(parseInt(item.getAttribute("data-num")))
         })
     )
 
-    const setSlide = function (num) {
-        slidePosition = parseInt(num)
+    const setSlide : (arg: number) => void = function (num) {
+        slidePosition = num
         moveSlide()
     }
 
-    const moveSlide = function () {
+    const moveSlide : () => void = function () {
         slides.forEach((slide) => slide.classList.add("hidden"))
         slides[slidePosition].classList.remove("hidden")
     }
 
-    const updateSlidePosition = function (a: "prev" | "next") {
-        if (a === "next") {
+    const updateSlidePosition : (arg: "prev" | "next") => void = function (direction) {
+        if (direction === "next") {
             slidePosition === totalSlides - 1
                 ? (slidePosition = 0)
                 : slidePosition++
