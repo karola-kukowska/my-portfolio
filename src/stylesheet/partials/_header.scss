@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     .header--name {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 2.5em;
         padding: 0.5em;
         border: $color--black 1px solid;
@@ -19,16 +19,16 @@
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
-        
+
         .navbar--list__item {
             margin: 0 3em;
             font-size: 1.5em;
-            
+
             .navbar--list__link {
                 color: $color--accent__dark;
                 text-decoration: none;
                 padding-bottom: 00.2em;
-                
+
                 &:hover {
                     color: $color--main;
                     font-weight: 500;

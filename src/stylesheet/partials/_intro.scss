@@ -3,8 +3,7 @@
     padding: 3em 0;
     display: flex;
     flex-direction: row;
-    
-    
+
     .intro--right {
         margin-left: 2.4em;
         padding: 1.2em;
@@ -19,15 +18,15 @@
         background: url("https://billenniumspzoo-my.sharepoint.com/:i:/r/personal/karolina_kasprzak_billennium_com/Documents/profile-pic2.jpg?csf=1&web=1&e=4eUMZ0");
         box-shadow: -20px 20px $color--accent__dark;
     }
-    
-    .intro--section__text{
+
+    .intro--section__text {
         font-weight: 400;
     }
-    
+
     .intro--section__text:first-of-type {
         padding-bottom: 1.2em;
     }
-    
+
     .intro--section__header {
         @include header-typography;
         margin: 1.2rem 0;
