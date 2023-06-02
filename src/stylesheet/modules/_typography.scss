@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+@import "./variables";
+
+//font families
+$base-font: 'Merriweather', serif;
+$alt-font:'Montserrat', sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: 1.8em;
+
+html {
+    font: $base-font;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $color--black;
+}
+
+@mixin header-typography {
+    font: $alt-font;
+    font-size: $base-font-size*2;
+    line-height: 1em;
+    color: $color--accent__dark;
+}
